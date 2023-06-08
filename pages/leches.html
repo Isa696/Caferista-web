@@ -5,39 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Cafearte</title>
-    <link rel="shortcut icon" href="../icons/taza-granos.jpg">
+    <title>Cafearista</title>
+    <link rel="shortcut icon" href="../assets/icons/taza-granos.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <nav id="barra-nav"><!-- Barra de navegacion-->
+        <nav class="barra-nav collapse" id="navbarToggleExternalContent"><!-- Barra de navegacion-->
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./historia.html">Historia</a></li>
-                <li><a href="./cultivo-reco.html">Cultivo</a></li>
-                <li><a href="./cata-tueste.html">Cata</a></li>
-                <li><a href="./extrac-variables.html">Extracción</a></li>
-                <li><a href="./sist-slow.html">Sistemas</a></li>
-                <li><a href="./leches.html">Leches</a></li>
+                <li class="boton boton-nav"><a href="./historia.html">Historia</a></li>
+                <li class="boton boton-nav"><a href="./cultivo-reco.html">Cultivo</a></li>
+                <li class="boton boton-nav"><a href="./cata-tueste.html">Cata</a></li>
+                <li class="boton boton-nav"><a href="./extrac-variables.html">Extracción</a></li>
+                <li class="boton boton-nav"><a href="./sist-slow.html">Sistemas</a></li>
+                <li class="boton boton-nav"><a href="./leches.html">Leches</a></li>
+                <li class="boton boton-nav"><a href="./recetas.html">Recetas</a></li>
             </ul>
         </nav>
         <div id="barra-nav2">
-            <img src="../image/grano-brote.png" alt="icono grano brote" class="grano-brote">
-            <a href="recetas.html">
-                <h1>Recetas</h1>
-            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../assets/icons/grano-brote.png" alt="icono grano brote" class="grano-brote animate__animated animate__bounce animate__slow animate__infinite">
+            </button>
+
+            <p class="boton boton-nav"><a href="../index.html">Inicio</a></p>
+
             <div id="cont-busc">
-                <img src="../image/lupa.png" alt="lupa" id="lupa-busc">
+                <img src="../assets/icons/lupa.png" alt="lupa" id="lupa-busc">
                 <input type="search" placeholder="Buscar" id="buscador">
             </div>
-            <img src="../image/grano-brote.png" alt="icono grano brote" class="grano-brote">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../assets/icons/grano-brote.png" alt="icono grano brote" class="grano-brote animate__animated animate__bounce animate__slow animate__infinite">
+            </button>
         </div>
     </header>
     <main id="centrado-main">
         <article class="parrafo">
-            <h2>La leche</h2>
+            <div class="titulo">
+                <img src="../assets/icons/grano-trio.png" alt="icono granos cafe" class="grano-trio">
+                <h1>La leche</h1>
+                <img src="../assets/icons/grano-trio.png" alt="icono granos cafe" class="grano-trio">
+            </div>
+
             <h3>Vaporizar</h3>
             <p>Hasta ahora hablamos del café y de las mejores maneras de prepararlo para que puedas tomarte esa rica taza. Buscaste el mejor grano, elegiste el equipo para prepararlo, calculaste las proporciones de extracción entre agua y molienda y hasta elegiste tu mejor taza. <br> Pero si te gusta con leche, hay que tener en cuenta otras tantas cuestiones. La leche es “el ingrediente” ideal para combinar el café pero, como seguro ya te diste cuenta, también va a cambiar el sabor final. Es por eso que lo mejor es buscar una leche que no opaque ese sabor. <br> La mejor es la que está balanceada entre proteínas, carbohidratos y grasas. Esto es necesario porque cuando la calentamos los ácidos grasos le dan un aspecto brillante, buen sabor y textura cremosa. Si es demasiado alta o muy baja en grasas, vamos a obtener un líquido muy cremoso o muy aguado. <br> El principal hidrato de carbono de la leche es la lactosa, la que le brinda su característico sabor dulce. Un rico sabor que se puede perder si no tenemos en cuenta la temperatura a la que la exponemos. La lactosa es un azúcar doble compuesto de glucosa y galactosa. Al vaporizar la leche las proteínas “se cortan” y aumenta la formación de agua. <br> Si calentás la leche a una temperatura de entre 55 y 65 grados, vas a lograr un café con leche más dulce. Si te pasás de los 70 grados, se pierde el dulzor y con él la textura cremosa tan necesaria para realizar el latte art en tu capuccino.</p>
             <h3>Técnica para vaporizar</h3>
@@ -52,16 +63,16 @@
             <p>La textura debe ser suave, al contrario de la espuma que ponen con cuchara en muchas cafeterías.</p>
         </article>
         <section class="cont-img-doble">
-            <img src="../image/leche/vaporizar.jpg" alt="Ejemplo vaporizar leche" class="img-doble1">
-            <img src="../image/leche/vaporizar-2.jpg" alt="Ejemplo vaporizar leche" class="img-doble2">
+            <img src="../assets/image/leche/vaporizar.jpg" alt="Ejemplo vaporizar leche" class="img-doble1">
+            <img src="../assets/image/leche/vaporizar-2.jpg" alt="Ejemplo vaporizar leche" class="img-doble2">
         </section>
         <article class="parrafo">
             <h2>Leches vegetales</h2>
             <p>Las opciones de leches para el café que ofrece hoy el mercado es amplia y variada. En este abanico, las leches vegetales ganan cada vez más terreno. Los hábitos alimentarios están cambiando en pos de la sostenibilidad del planeta y para disminuir el consumo de productos de origen animal. Debido a su similitud de color y consistencia se las conoce como leches vegetales, y su categoría es la de bebidas vegetales. <br> La diferencia básica, además de su origen, es el contenido en grasas y proteínas. Son leches elaboradas a partir de frutos secos, cereales o semillas. No tienen lactosa, suelen tener un mayor porcentaje de vitaminas y calcio. No tienen conservantes ni colorantes y llegan en envases reciclables. <br> En las cafeterías de especialidad la oferta no láctea tiene cada vez más demanda y es por eso que los especialistas estudian cómo combinar mejor estas leches con los granos del café. <br> Al igual que cuando se usa leche de vaca, hay que tener en cuenta las características de sabor de tu café, que como vimos, varía mucho según el origen, los beneficios y los tuestes. <br> Con la premisa que los atributos del café estén presentes y en su mejor forma, hay que elegir el tipo de bebida vegetal que combine mejor. Como regla general te recomendamos buscar cafés más intensos, de tueste medio alto y con más dulzura que acidez. <br> Un café con mucha acidez y poco cuerpo va a dificultar la armonía entre ambas bebidas. A la hora de elegir cuál usar para el café hay que tener en cuenta sus sabores. <br> Algunas leches vegetales tienen sabores demasiado fuertes y otras son muy difíciles de vaporizar. En general, las leches vegetales con más carácter para usar en el café son las leches de frutos secos como almendras, avellanas o nueces. <br> La leche de soja fue la primera que entró al mercado, tiene un sabor bastante neutro y se puede calentar más sin perder textura. Sin embargo, la de almendras se convirtió en una de las más elegidas por el aporte de sabor dulce al café. Los baristas también la eligen porque su textura facilita la creación del latte art.</p>
         </article>
         <section class="cont-img-doble">
-            <img src="../image/leche/leche-vegetal.jpg" alt="leche vegetal" class="img-doble1">
-            <img src="../image/leche/leche-vegetal2.jpg" alt="Leche vegetal" class="img-doble2">
+            <img src="../assets/image/leche/leche-vegetal.jpg" alt="leche vegetal" class="img-doble1">
+            <img src="../assets/image/leche/leche-vegetal2.jpg" alt="Leche vegetal" class="img-doble2">
         </section>
         <article class="parrafo">
             <p>La de coco es cremosa y más parecida a la tradicional en su textura, pero su sabor característico puede opacar el sabor del café. Para una bebida bien densa, la de arroz es la que más carbohidratos  contiene  y aporta una textura muy cremosa. <br> Con la de arroz no se consigue la espuma apropiada para un cappuccino, aunque su sabor sutil le da protagonismo al café. <br> La leche de avena ofrece un sabor suave a malta que combina muy bien con el café. Su textura genera una crema que no se corta, con lo que se puede lograr un buen capuccino. <br> En general, al calentarse, las leches vegetales reaccionan de manera diferente a la de vaca. Tienen menos grasa y proteínas, por lo que a veces es difícil emulsionarlas. Los cambios de temperatura, la acidez del café y el impacto de la formación de espuma hacen que estas leches “se corten” más fácilmente. Para no romper la cadena molecular y lograr una buena crema y sabor, no hay que calentarlas por encima de los 55 grados.</p>
@@ -71,13 +82,13 @@
             <p>Los orígenes se encuentran en Italia. Sin embargo, el latte art se desarrolló en los EE.UU. en los años 80 y 90 y luego se extendió al resto del mundo. Sus inicios siguieron la evolución del espresso y de la microespuma, es decir, la textura ideal de la leche al vapor para la creación de arte latte. <br> A medida que la espuma de la leche blanca se vierte y se levanta para tocar la superficie de color marrón del espresso, se forma un contraste y el diseño emerge. <br> La leche está presente en lattes, cappuccinos, macchiatos y se necesita un poco de práctica para hacerlo bien. Requiere una combinación de las herramientas adecuadas, respetar el momento y el movimiento adecuado para obtener la leche perfectamente al vapor.</p>
         </article>
         <section>
-            <img src="../image/leche/latte-art.jpg" alt="Ejemplos latte art" class="imagen img-fluid">
+            <img src="../assets/image/leche/latte-art.jpg" alt="Ejemplos latte art" class="imagen">
         </section>
         <article class="parrafo">
             <p><strong>Calidad: </strong> se necesitan ingredientes de calidad, por eso la leche debe estar fresca y fría, no debe estar expuesta al calor o a la luz antes de usarse. <br> <strong>La jarra: </strong>utilizá una jarra de acero inoxidable con una boquilla estrecha. Es importante que la jarra esté fría y limpia. Llénala con la cantidad suficiente de leche como para obtener la textura adecuada, ya que al utilizar una cantidad menor, puede que se caliente de más. Aunque una jarra de plástico puede ser utilizada, considerá que el acero inoxidable es un mejor conductor de calor. <br> <strong>Vaporizar la leche: </strong> es una habilidad esencial cuando se trabaja en la industria del café y sobre todo en arte latte. La leche es el segundo ingrediente más común en las bebidas de café. La leche tratada con vapor es la que ha sido calentada mediante el uso de vapor. El espumado de la leche se verifica cuando ha sido espumada también usando vapor. La diferencia es la colocación de la lanceta de vapor en el líquido. <br> <strong>Tipos: </strong> los profesionales diferencian dos tipos de espuma de leche. Una resistente, densa y de poros finos para capuccino, y otra cremosa, más líquida y lisa para trabajar el latte art. La sólida se asienta en la superficie y no penetra. Es más densa. La cremosa fluye primero al fondo y luego sube, por lo que se puede dibujar  en la superficie.</p>
         </article>
         <section>
-            <img src="../image/leche/latte-art2.jpg" alt="Metodo latte art con jarra" class="imagen img-fluid">
+            <img src="../assets/image/leche/latte-art2.jpg" alt="Metodo latte art con jarra" class="imagen">
         </section>
     </main>
     <footer>
@@ -91,12 +102,14 @@
             <li>info@Cafearte-website.com,ar</a></li>
         </ul>
         <div class="copy-right">
-            <img src="../image/granos-caf.png" alt="icono granos cafe" class="granos-cafe">
+            <img src="../assets/icons/granos-caf.png" alt="icono granos cafe" class="granos-cafe">
             <p>&copy; 2023 Argentine Coffee Website. All rights reserved.</p>
-            <img src="../image/granos-caf.png" alt="icono granos cafe" class="granos-cafe">
+            <img src="../assets/icons/granos-caf.png" alt="icono granos cafe" class="granos-cafe">
         </div>
-        <img src="./image/marco-cafe.png" alt="Borde inferior de granos cafe" id="marco-cafe">
+        <img src="../assets/image/marco-cafe.png" alt="Borde inferior de granos cafe" id="marco-cafe">
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>

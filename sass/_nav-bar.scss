@@ -1,0 +1,60 @@
+/*propiedades barra de navegacion*/
+
+header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+    background-color: #925858;
+}
+
+.barra-nav{
+    height: fit-content;
+    ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    li {
+    display: inline-block;
+    list-style: none;
+}}}
+
+
+#barra-nav2 {
+    height: fit-content;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 1%;
+}
+
+#cont-busc{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 600px){#buscador{
+    width: 120px;}}
+
+#lupa-busc{
+    height: 5vh;
+    width: 5vh;
+}
+
+.grano-brote{ /*icono nav bar*/
+    height: 7vh;
+    width: 9vh;
+}
+
+.boton-nav{ /*propiedades botones nav*/
+    font-size: 170%;
+    padding: 0.2%;
+    border: 2px rgb(255, 255, 255) dashed;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    a{
+        color: white;
+        font-weight: bold;
+}}

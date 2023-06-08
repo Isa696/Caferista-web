@@ -5,39 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Cafearte</title>
-    <link rel="shortcut icon" href="../icons/taza-granos.jpg">
+    <title>Cafearista</title>
+    <link rel="shortcut icon" href="../assets/icons/taza-granos.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <nav id="barra-nav"><!-- Barra de navegacion-->
+        <nav class="barra-nav collapse" id="navbarToggleExternalContent"><!-- Barra de navegacion-->
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./historia.html">Historia</a></li>
-                <li><a href="./cultivo-reco.html">Cultivo</a></li>
-                <li><a href="./cata-tueste.html">Cata</a></li>
-                <li><a href="./extrac-variables.html">Extracción</a></li>
-                <li><a href="./sist-slow.html">Sistemas</a></li>
-                <li><a href="./leches.html">Leches</a></li>
+                <li class="boton boton-nav"><a href="./historia.html">Historia</a></li>
+                <li class="boton boton-nav"><a href="./cultivo-reco.html">Cultivo</a></li>
+                <li class="boton boton-nav"><a href="./cata-tueste.html">Cata</a></li>
+                <li class="boton boton-nav"><a href="./extrac-variables.html">Extracción</a></li>
+                <li class="boton boton-nav"><a href="./sist-slow.html">Sistemas</a></li>
+                <li class="boton boton-nav"><a href="./leches.html">Leches</a></li>
+                <li class="boton boton-nav"><a href="./recetas.html">Recetas</a></li>
             </ul>
         </nav>
         <div id="barra-nav2">
-            <img src="../image/grano-brote.png" alt="icono grano brote" class="grano-brote">
-            <a href="recetas.html">
-                <h1>Recetas</h1>
-            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../assets/icons/grano-brote.png" alt="icono grano brote" class="grano-brote animate__animated animate__bounce animate__slow animate__infinite">
+                </button>
+
+            <p class="boton boton-nav"><a href="../index.html">Inicio</a></p>
+
             <div id="cont-busc">
-                <img src="../image/lupa.png" alt="lupa" id="lupa-busc">
+                <img src="../assets/icons/lupa.png" alt="lupa" id="lupa-busc">
                 <input type="search" placeholder="Buscar" id="buscador">
             </div>
-            <img src="../image/grano-brote.png" alt="icono grano brote" class="grano-brote">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../assets/icons/grano-brote.png" alt="icono grano brote" class="grano-brote animate__animated animate__bounce animate__slow animate__infinite">
+                </button>
+
         </div>
     </header>
+
     <main id="centrado-main">
         <article class="parrafo">
-            <h2>El café de especialidad - El Cultivo</h2>
+            <div class="titulo">
+                <img src="../assets/icons/grano-trio.png" alt="icono granos cafe" class="grano-trio">
+                <h1>El café de especialidad - El Cultivo</h1>
+                <img src="../assets/icons/grano-trio.png" alt="icono granos cafe" class="grano-trio">
+            </div>
+
             <p>La nueva versatilidad del café no tiene límites. Hoy podemos disfrutar de un café en todas sus formas:
                 taza, vaso, pocillo, bebida, cóctel, caliente, frío o hasta en un postre. Existen muchas más cafeterías
                 de especialidad, cafés de siempre con mejores granos, nuevos jugadores en el circuito y muchas más
@@ -66,7 +79,7 @@
         </article>
 
         <section>
-            <img src="../image/cultivo-reco/cultivo.png" alt="Cultivos cafeto" class="imagen img-fluid">
+            <img src="../assets/image/cultivo-reco/cultivo.png" alt="Cultivos cafeto" class="imagen">
         </section>
 
         <article class="parrafo">
@@ -87,7 +100,7 @@
         </article>
 
         <section>
-            <img src="../image/cultivo-reco/paises-top.jpg" alt="Lista paises top" class="imagen img-fluid">
+            <img src="../assets/image/cultivo-reco/paises-top.jpg" alt="Lista paises top" class="imagen">
         </section>
 
         <article class="parrafo">
@@ -170,7 +183,7 @@
         </article>
 
         <section>
-            <img src="../image/cultivo-reco/arab-vs-rob.jpg" alt="arabica vs robusta" class="imagen img-fluid">
+            <img src="../assets/image/cultivo-reco/arab-vs-rob.jpg" alt="arabica vs robusta" class="imagen">
         </section>
 
         <article class="parrafo">
@@ -205,8 +218,8 @@
         </article>
 
         <section class="cont-img-doble">
-            <img src="../image/cultivo-reco/druppa.jpg" alt="Drupa fruto del cafeto" class="img-doble1">
-            <img src="../image/cultivo-reco/drupa2.webp" alt="Drupa fruto cafeto" class="img-doble2">
+            <img src="../assets/image/cultivo-reco/druppa.jpg" alt="Drupa fruto del cafeto" class="img-doble1">
+            <img src="../assets/image/cultivo-reco/drupa2.webp" alt="Drupa fruto cafeto" class="img-doble2">
         </section>
 
         <article class="parrafo">
@@ -233,7 +246,7 @@
         </article>
 
         <section>
-            <img src="../image/cultivo-reco/benef-lavado.jpg" alt="beneficio lavado" class="imagen img-fluid">
+            <img src="../assets/image/cultivo-reco/benef-lavado.jpg" alt="beneficio lavado" class="imagen">
         </section>
 
         <article class="parrafo">
@@ -245,8 +258,8 @@
         </article>
 
         <section class="cont-img-doble">
-            <img src="../image/cultivo-reco/benef-nat.jpg" alt="beneficio natural" class="img-doble1">
-            <img src="../image/cultivo-reco/benef-nat2.jpg" alt="beneficio natural" class="img-doble2">
+            <img src="../assets/image/cultivo-reco/benef-nat.jpg" alt="beneficio natural" class="img-doble1">
+            <img src="../assets/image/cultivo-reco/benef-nat2.jpg" alt="beneficio natural" class="img-doble2">
         </section>
         <article class="parrafo">
             <p><strong>Honey:</strong>luego de la recolección, los frutos se separan en canales de agua. Se retira la
@@ -258,7 +271,7 @@
         </article>
 
         <section>
-            <img src="../image/cultivo-reco/benef-honey.jpg" alt="beneficio honey" class="imagen img-fluid">
+            <img src="../assets/image/cultivo-reco/benef-honey.jpg" alt="beneficio honey" class="imagen">
         </section>
 
         <article class="parrafo">
@@ -287,12 +300,14 @@
             <li>info@Cafearte-website.com,ar</a></li>
         </ul>
         <div class="copy-right">
-            <img src="../image/granos-caf.png" alt="icono granos cafe" class="granos-cafe">
+            <img src="../assets/icons/granos-caf.png" alt="icono granos cafe" class="granos-cafe">
             <p>&copy; 2023 Argentine Coffee Website. All rights reserved.</p>
-            <img src="../image/granos-caf.png" alt="icono granos cafe" class="granos-cafe">
+            <img src="../assets/icons/granos-caf.png" alt="icono granos cafe" class="granos-cafe">
         </div>
-        <img src="./image/marco-cafe.png" alt="Borde inferior de granos cafe" id="marco-cafe">
+        <img src="../assets/image/marco-cafe.png" alt="Borde inferior de granos cafe" id="marco-cafe">
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>

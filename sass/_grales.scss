@@ -1,0 +1,32 @@
+*{/*reseteo margen padding y box sizing*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+body {/*imagen de fondo*/
+    background-image: url(../assets/image/fondo-alpillera.jpg);
+}
+
+a:link , a:visited , a:active { /*quite las propiedades por defecto de los enlaces*/
+    text-decoration: none;
+}
+
+a:focus{ /*bordes al enfocar*/
+    border-color: 2px black solid;
+}
+
+@media (hover :hover) {.boton:hover{ /*puse un media hover para evitar errores en dispositivos*/
+        transform: scale(150%);
+        transition: 0.5s;}}
+
+.boton a:active{ /*active para todos los enlaces*/
+            text-decoration: underline;
+            font-weight: bold;
+            color: black
+        }

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*import propiedades generales, reseteos, hover, actives etc*/
 * { /*reseteo margen padding y box sizing*/
   margin: 0;
   padding: 0;
@@ -10,177 +11,55 @@
   box-sizing: content-box;
 }
 
+body { /*imagen de fondo*/
+  background-image: url(../assets/image/fondo-alpillera.jpg);
+}
+
 a:link, a:visited, a:active { /*quite las propiedades por defecto de los enlaces*/
   text-decoration: none;
-  transition: 0.5s;
 }
 
-body { /*imagen de fondo*/
-  background-image: url(../image/fondo-alpillera.jpg);
-}
-
-header a:hover { /*sombreado al posicionar puntero*/
-  box-shadow: 3px 3px 3px 3px black;
-}
-
-a :focus { /*bordes al enfocar*/
+a:focus { /*bordes al enfocar*/
   border-color: 2px black solid;
 }
 
-header {
-  position: sticky;
-  width: 100%;
-  top: 0;
-  z-index: 9;
-  background-color: #925858;
-}
-
-#barra-nav {
-  height: fit-content;
-}
-
-#barra-nav ul {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-#barra-nav ul li {
-  display: inline-block;
-  list-style: none;
-  font-size: 130%;
-  padding: 0.15%;
-  border: 2px rgb(255, 255, 255) dashed;
-  border-radius: 3px;
-}
-
-@media (max-width: 600px) {
-  #barra-nav ul li {
-    font-size: 80%;
+@media (hover: hover) {
+  .boton:hover { /*puse un media hover para evitar errores en dispositivos*/
+    transform: scale(150%);
+    transition: 0.5s;
   }
 }
-@media (max-width: 400px) {
-  #barra-nav ul li {
-    font-size: 60%;
-  }
-}
-#barra-nav ul li a {
-  color: white;
+.boton a:active { /*active para todos los enlaces*/
+  text-decoration: underline;
   font-weight: bold;
-}
-
-#barra-nav2 {
-  height: fit-content;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-#barra-nav2 h1 {
-  display: inline-block;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  font-size: 130%;
-  padding: 0.2%;
-  border: 2px rgb(247, 255, 135) dashed;
-}
-
-@media (max-width: 600px) {
-  #barra-nav2 h1 {
-    font-size: 100%;
-  }
-}
-@media (max-width: 400px) {
-  #barra-nav2 h1 {
-    font-size: 80%;
-  }
-}
-#cont-busc {
-  display: flex;
-  justify-content: center;
-}
-
-#lupa-busc {
-  height: 5vh;
-  width: 5vh;
-}
-
-.grano-brote {
-  height: 7vh;
-  width: 7vh;
-}
-
-#centrado-main { /*centrado de la pagina en general*/
-  margin: 0.5% 1%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.parrafo { /*propiedades generales para todos los parrafos*/
-  margin-top: 1%;
-  margin-bottom: 1%;
-  font-size: 130%;
-  padding: 1% 3%;
   color: black;
-  background-color: rgb(255, 255, 255);
-  line-height: 30px;
 }
 
-@media (max-width: 600px) {
-  .parrafo {
-    font-size: 100%;
-    line-height: 15px;
-  }
-}
-@media (max-width: 450px) {
-  .parrafo {
-    font-size: 80%;
-    line-height: 15px;
-  }
-}
-#img-bienvenida {
-  display: inline-block;
-  height: 30vh;
-  width: 90vw;
-  box-shadow: 3px 3px 3px 3px black;
-}
-
-.indice { /*centrado y quite estilo listas al indice*/
+/*import del indice*/
+.indice { /*centrado*/
   text-align: center;
 }
 
-#indice-titulo { /*titulo del indice en el index*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99A253;
-  border-radius: 5px;
+.boton-index { /*propiedades botones indice*/
+  padding: 0.5%;
+  border-radius: 10px;
+  border: rgb(110, 108, 108) 2px solid;
+  background-color: #995959;
+}
+.boton-index a {
+  color: white;
+  font-size: 170%;
 }
 
-.indice a {
-  background-color: #6B2737;
+.lista-indice { /*quite estilo listas al indice*/
   padding: 1%;
-  border-radius: 5px;
-}
-
-.grano-trio {
-  height: 7vh;
-  width: 7vh;
-}
-
-.lista-indice {
   list-style-type: none;
 }
 
 #grilla-cont-recetas {
+  margin-top: 1%;
   background-color: rgb(252, 224, 191);
   border-radius: 15px;
-  width: auto;
-  height: auto;
   display: grid;
   grid-template-areas: "tipos-cafe bebidas-cafe" "lista-cafe lista-bebidas";
   justify-items: center;
@@ -189,8 +68,14 @@ header {
   grid-template-rows: 1fr 1fr;
 }
 
+@media (max-width: 400px) {
+  #grilla-cont-recetas {
+    height: 50vh;
+  }
+}
 #tipos-cafe {
   grid-area: tipos-cafe;
+  text-decoration: underline;
 }
 
 #lista-cafes {
@@ -199,13 +84,14 @@ header {
 
 #bebidas-cafe {
   grid-area: bebidas-cafe;
+  text-decoration: underline;
 }
 
 #lista-bebidas {
   grid-area: lista-bebidas;
 }
 
-#agradecimiento {
+#agradecimiento { /* contenedor agradecimiento index*/
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -215,6 +101,8 @@ header {
   background-color: rgb(255, 255, 255);
   color: rgb(116, 49, 49);
   font-weight: bold;
+  border-radius: 15px;
+  width: 80vw;
 }
 
 @media (max-width: 600px) {
@@ -227,7 +115,132 @@ header {
   width: 20%;
 }
 
-.imagen {
+/*import barra de navegacion*/
+/*propiedades barra de navegacion*/
+header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+  background-color: #925858;
+}
+
+.barra-nav {
+  height: fit-content;
+}
+.barra-nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.barra-nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+#barra-nav2 {
+  height: fit-content;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 1%;
+}
+
+#cont-busc {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  #buscador {
+    width: 120px;
+  }
+}
+#lupa-busc {
+  height: 5vh;
+  width: 5vh;
+}
+
+.grano-brote { /*icono nav bar*/
+  height: 7vh;
+  width: 9vh;
+}
+
+.boton-nav { /*propiedades botones nav*/
+  font-size: 170%;
+  padding: 0.2%;
+  border: 2px rgb(255, 255, 255) dashed;
+  border-radius: 5px;
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+.boton-nav a {
+  color: white;
+  font-weight: bold;
+}
+
+/*import centrados main, parrafos, titulos y subtitulos*/
+#centrado-main { /*centrado de la pagina en general*/
+  margin: 0.5% 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.parrafo { /*propiedades generales para todos los parrafos*/
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 130%;
+  padding: 1% 5%;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  line-height: 40px;
+  border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+  .parrafo {
+    font-size: 110%;
+    line-height: 50px;
+  }
+}
+.titulo { /*titulos*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 1%;
+  text-decoration: underline;
+  color: #fff;
+  background-color: #99A253;
+}
+
+.grano-trio { /*icono titulos*/
+  height: 7vh;
+  width: 7vh;
+}
+
+.subtitulo-suelto { /*puse unos estilos a los enlaces y aclaraciones que estan por fuerra de parrafos*/
+  font-size: 150%;
+  color: white;
+  font-weight: bold;
+  font-style: oblique;
+  display: inline-block;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: #99A253;
+}
+
+@media (max-width: 600px) {
+  .subtitulo-suelto {
+    font-size: 120%;
+  }
+}
+/*import imagenes y sus propiedades*/
+.imagen { /*propiedades grales cont imagen en todas las pags*/
   height: 80vh;
   width: 95vw;
   display: inline-block;
@@ -236,7 +249,7 @@ header {
   box-shadow: 3px 3px 3px 3px black;
 }
 
-.imagen-grde {
+.imagen-grde { /*propiedades grales cont imagen gran tamaño todas las pags*/
   height: 115vh;
   width: 95vw;
   display: inline-block;
@@ -294,26 +307,13 @@ header {
     height: 50%;
   }
 }
-.subtitulo-suelto { /*puse unos estilos a los enlaces y aclaraciones que estan por fuerra de parrafos*/
-  font-size: 150%;
-  color: white;
-  font-weight: bold;
-  font-style: oblique;
-  display: inline-block;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  background-color: #99A253;
-}
-
-@media (max-width: 426px) {
-  .subtitulo-suelto {
-    font-size: 110%;
-  }
-}
-#marco-cafe {
+/*import footer*/
+/*propiedades footer*/
+#marco-cafe { /*fondo detras del footer*/
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
   width: 98vw;
   height: 150vh;
   z-index: -9;
@@ -325,10 +325,23 @@ footer {
   color: #fff;
   padding: 1% 1%;
 }
-
-footer h4 {
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  margin-bottom: 1%;
+  color: #fff;
+  font-size: 110%;
+  text-decoration: none;
+}
+footer ul li h4 {
   font-size: 130%;
   font-weight: bold;
+  margin-bottom: 2%;
+}
+footer ul li h4 p {
+  font-size: 110%;
+  line-height: 1.5;
   margin-bottom: 2%;
 }
 
@@ -337,28 +350,11 @@ footer h4 {
     font-size: 100%;
   }
 }
-footer p {
-  font-size: 110%;
-  line-height: 1.5;
-  margin-bottom: 2%;
-}
-
 @media (max-width: 600px) {
   footer p {
     font-size: 80%;
   }
 }
-footer ul {
-  list-style: none;
-}
-
-footer ul li {
-  margin-bottom: 1%;
-  color: #fff;
-  font-size: 110%;
-  text-decoration: none;
-}
-
 @media (max-width: 600px) {
   footer ul li {
     font-size: 80%;
@@ -371,14 +367,13 @@ footer ul li {
   background-color: #925858;
   padding: 1% 0;
 }
-
 .copy-right p {
   font-size: 80%;
   text-align: center;
   margin: 0;
 }
 
-.granos-cafe {
+.granos-cafe { /*icono footer copyright*/
   height: 7vh;
   width: 7vh;
 }

@@ -5,39 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Cafearte</title>
-    <link rel="shortcut icon" href="../icons/taza-granos.jpg">
+    <title>Cafearista</title>
+    <link rel="shortcut icon" href="../assets/icons/taza-granos.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <nav id="barra-nav"><!-- Barra de navegacion-->
+        <nav class="barra-nav collapse" id="navbarToggleExternalContent"><!-- Barra de navegacion-->
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./historia.html">Historia</a></li>
-                <li><a href="./cultivo-reco.html">Cultivo</a></li>
-                <li><a href="./cata-tueste.html">Cata</a></li>
-                <li><a href="./extrac-variables.html">Extracción</a></li>
-                <li><a href="./sist-slow.html">Sistemas</a></li>
-                <li><a href="./leches.html">Leches</a></li>
+                <li class="boton boton-nav"><a href="./historia.html">Historia</a></li>
+                <li class="boton boton-nav"><a href="./cultivo-reco.html">Cultivo</a></li>
+                <li class="boton boton-nav"><a href="./cata-tueste.html">Cata</a></li>
+                <li class="boton boton-nav"><a href="./extrac-variables.html">Extracción</a></li>
+                <li class="boton boton-nav"><a href="./sist-slow.html">Sistemas</a></li>
+                <li class="boton boton-nav"><a href="./leches.html">Leches</a></li>
+                <li class="boton boton-nav"><a href="./recetas.html">Recetas</a></li>
             </ul>
         </nav>
         <div id="barra-nav2">
-            <img src="../image/grano-brote.png" alt="icono grano brote" class="grano-brote">
-            <a href="recetas.html">
-                <h1>Recetas</h1>
-            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../assets/icons/grano-brote.png" alt="icono grano brote" class="grano-brote animate__animated animate__bounce animate__slow animate__infinite">
+                </button>
+
+            <p class="boton boton-nav"><a href="../index.html">Inicio</a></p>
+
             <div id="cont-busc">
-                <img src="../image/lupa.png" alt="lupa" id="lupa-busc">
+                <img src="../assets/icons/lupa.png" alt="lupa" id="lupa-busc">
                 <input type="search" placeholder="Buscar" id="buscador">
             </div>
-            <img src="../image/grano-brote.png" alt="icono grano brote" class="grano-brote">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../assets/icons/grano-brote.png" alt="icono grano brote" class="grano-brote animate__animated animate__bounce animate__slow animate__infinite">
+                </button>
+
         </div>
     </header>
+
     <main id="centrado-main">
         <article class="parrafo">
-            <h2>Cata, Tueste, conservación y empaque</h2>
+            <div class="titulo">
+                <img src="../assets/icons/grano-trio.png" alt="icono granos cafe" class="grano-trio">
+                <h1>Cata, Tueste, conservación y empaque</h1>
+                <img src="../assets/icons/grano-trio.png" alt="icono granos cafe" class="grano-trio">
+            </div>
+
             <p>En las últimas décadas, los productores de café se han enfocado en ofrecer cafés especiales para aquellos
                 consumidores que buscan nuevas experiencias sensoriales. Como resultado de esta iniciativa nació el Café
                 Premium, también conocido como de alta gama o especial. Un café de calidad y que aporta nuevos sabores
@@ -130,7 +143,7 @@
             <h3>Hoja cata SCAA</h3>
         </div>
         <section>
-            <img src="../image/cata-tueste-conserv/hoja-cata.jpg" alt="Hoja cata SCAA" class="imagen-grde img-fluid">
+            <img src="../assets/image/cata-tueste-conserv/hoja-cata.jpg" alt="Hoja cata SCAA" class="imagen-grde">
         </section>
 
         <article class="parrafo">
@@ -177,7 +190,7 @@
         </article>
 
         <section>
-            <img src="../image/cata-tueste-conserv/rueda-cata.jpg" alt="Rueda de Sabores del Catador de Café" class="imagen-grde img-fluid">
+            <img src="../assets/image/cata-tueste-conserv/rueda-cata.jpg" alt="Rueda de Sabores del Catador de Café" class="imagen-grde">
         </section>
         <article class="parrafo">
             <h3>Pasos para usar la rueda de sabores</h3>
@@ -202,7 +215,7 @@
                 pierden aroma y sabor.</p>
         </article>
         <section>
-            <img src="../image/cata-tueste-conserv/tueste-grados.jpg" alt="Distintos grados de tueste" class="imagen img-fluid">
+            <img src="../assets/image/cata-tueste-conserv/tueste-grados.jpg" alt="Distintos grados de tueste" class="imagen">
         </section>
 
         <article class="parrafo">
@@ -239,7 +252,7 @@
         </article>
 
         <section>
-            <img src="../image/cata-tueste-conserv/torrefaccion.jpg" alt="Torrefacción" class="imagen-grde img-fluid">
+            <img src="../assets/image/cata-tueste-conserv/torrefaccion.jpg" alt="Torrefacción" class="imagen-grde">
         </section>
 
         <article class="parrafo">
@@ -278,7 +291,7 @@
             <h3>Tabla de colores de Agtron</h3>
         </div>
         <section>
-            <img src="../image/cata-tueste-conserv/tabla-agtron.jpg" alt="Tabla de colores de Agtron" class="imagen img-fluid">
+            <img src="../assets/image/cata-tueste-conserv/tabla-agtron.jpg" alt="Tabla de colores de Agtron" class="imagen">
         </section>
 
         <article class="parrafo">
@@ -289,8 +302,8 @@
         </article>
 
         <section>
-            <img src="../image/cata-tueste-conserv/niveles-tostion.jpg" alt="Comparativa niveles tostión, color y sabor"
-                class="imagen img-fluid">
+            <img src="../assets/image/cata-tueste-conserv/niveles-tostion.jpg" alt="Comparativa niveles tostión, color y sabor"
+                class="imagen">
         </section>
 
         <article class="parrafo">
@@ -322,7 +335,7 @@
         </article>
 
         <section>
-            <img src="../image/cata-tueste-conserv/empaquetados.png" alt="Tipos de empaquetados" class="imagen img-fluid">
+            <img src="../assets/image/cata-tueste-conserv/empaquetados.png" alt="Tipos de empaquetados" class="imagen">
         </section>
         <a href="http://noticias.probolsas.com/tipos-de-empaques-para-cafe/" target="_blank" class="subtitulo-suelto">Ejemplos de una
             tienda de empaquetados</a>
@@ -338,12 +351,13 @@
             <li>info@Cafearte-website.com,ar</a></li>
         </ul>
         <div class="copy-right">
-            <img src="../image/granos-caf.png" alt="icono granos cafe" class="granos-cafe">
+            <img src="../assets/icons/granos-caf.png" alt="icono granos cafe" class="granos-cafe">
             <p>&copy; 2023 Argentine Coffee Website. All rights reserved.</p>
-            <img src="../image/granos-caf.png" alt="icono granos cafe" class="granos-cafe">
+            <img src="../assets/icons/granos-caf.png" alt="icono granos cafe" class="granos-cafe">
         </div>
-        <img src="./image/marco-cafe.png" alt="Borde inferior de granos cafe" id="marco-cafe">
+        <img src="../assets/image/marco-cafe.png" alt="Borde inferior de granos cafe" id="marco-cafe">
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>

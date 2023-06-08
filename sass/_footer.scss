@@ -1,0 +1,58 @@
+/*propiedades footer*/
+
+#marco-cafe{ /*fondo detras del footer*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 98vw;
+    height: 150vh;
+    z-index: -9;
+}
+
+footer {
+    position: relative;
+    background-color: #5f4411a1;
+    color: #fff;
+    padding: 1% 1%;
+    ul {
+        list-style: none;
+        li {
+            margin-bottom: 1%;
+            color: #fff;
+            font-size: 110%;
+            text-decoration: none;
+            h4 {
+                font-size: 130%;
+                font-weight: bold;
+                margin-bottom: 2%;
+                p {
+                    font-size: 110%;
+                    line-height: 1.5;
+                    margin-bottom: 2%;
+}}}}}
+
+@media (max-width:600px){footer h4 {font-size: 100%;}}
+
+@media (max-width:600px){footer p {font-size: 80%;}}
+
+@media (max-width:600px){footer ul li {font-size: 80%;}}
+
+
+.copy-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #925858;
+    padding: 1% 0;
+    p {
+        font-size: 80%;
+        text-align: center;
+        margin: 0;
+}}
+
+
+.granos-cafe{/*icono footer copyright*/
+    height: 7vh;
+    width: 7vh;
+}

@@ -5,39 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Cafearte</title>
-    <link rel="shortcut icon" href="../icons/taza-granos.jpg">
+    <title>Cafearista</title>
+    <link rel="shortcut icon" href="../assets/icons/taza-granos.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <nav id="barra-nav"><!-- Barra de navegacion-->
+        <nav class="barra-nav collapse" id="navbarToggleExternalContent"><!-- Barra de navegacion-->
+
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./historia.html">Historia</a></li>
-                <li><a href="./cultivo-reco.html">Cultivo</a></li>
-                <li><a href="./cata-tueste.html">Cata</a></li>
-                <li><a href="./extrac-variables.html">Extracción</a></li>
-                <li><a href="./sist-slow.html">Sistemas</a></li>
-                <li><a href="./leches.html">Leches</a></li>
+                <li class="boton boton-nav"><a href="./historia.html">Historia</a></li>
+                <li class="boton boton-nav"><a href="./cultivo-reco.html">Cultivo</a></li>
+                <li class="boton boton-nav"><a href="./cata-tueste.html">Cata</a></li>
+                <li class="boton boton-nav"><a href="./extrac-variables.html">Extracción</a></li>
+                <li class="boton boton-nav"><a href="./sist-slow.html">Sistemas</a></li>
+                <li class="boton boton-nav"><a href="./leches.html">Leches</a></li>
+                <li class="boton boton-nav"><a href="./recetas.html">Recetas</a></li>
             </ul>
         </nav>
+
         <div id="barra-nav2">
-            <img src="../image/grano-brote.png" alt="icono grano brote" class="grano-brote">
-            <a href="recetas.html">
-                <h1>Recetas</h1>
-            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../assets/icons/grano-brote.png" alt="icono grano brote" class="grano-brote animate__animated animate__bounce animate__slow animate__infinite">
+                </button>
+
+            <p class="boton boton-nav"><a href="../index.html">Inicio</a></p>
+
             <div id="cont-busc">
-                <img src="../image/lupa.png" alt="lupa" id="lupa-busc">
+                <img src="../assets/icons/lupa.png" alt="lupa" id="lupa-busc">
                 <input type="search" placeholder="Buscar" id="buscador">
             </div>
-            <img src="../image/grano-brote.png" alt="icono grano brote" class="grano-brote">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../assets/icons/grano-brote.png" alt="icono grano brote" class="grano-brote animate__animated animate__bounce animate__slow animate__infinite">
+                </button>
+
         </div>
     </header>
     <main id="centrado-main">
         <article class="parrafo">
-            <h2>La Extracción del Café</h2>
+            <div class="titulo">
+                <img src="../assets/icons/grano-trio.png" alt="icono granos cafe" class="grano-trio">
+                <h2>La Extracción del Café</h2>
+                <img src="../assets/icons/grano-trio.png" alt="icono granos cafe" class="grano-trio">
+            </div>
+
             <p>Partimos de la idea de que es perfectamente posible preparar un buen café en casa, pero para eso
                 necesitamos entender algunas cuestiones acerca de la extracción. La preparación de café es el proceso de
                 extraer el material soluble del café tostado y molido. La palabra extracción, en café, significa la
@@ -92,7 +106,7 @@
             </p>
         </article>
         <section>
-            <img src="../image/extrac-variab/inmersion.jpg" alt="inmersion" class="imagen img-fluid">
+            <img src="../assets/image/extrac-variab/inmersion.jpg" alt="inmersion" class="imagen">
         </section>
         <article class="parrafo">
             <p><strong>Infusión:</strong> Cuando se habla de método por infusión se hace referencia a que el agua fluya
@@ -111,7 +125,7 @@
             </p>
         </article>
         <section>
-            <img src="../image/extrac-variab/infusion.jpg" alt="infusión" class="imagen img-fluid">
+            <img src="../assets/image/extrac-variab/infusion.jpg" alt="infusión" class="imagen">
         </section>
         <article class="parrafo">
             <p><strong>Presión – Espresso:</strong> Para hacer un espresso se utiliza la infusión, pero su principal
@@ -121,7 +135,7 @@
                 categoría.</p>
         </article>
         <section>
-            <img src="../image/extrac-variab/espresso.png" alt="espresso" class="imagen img-fluid">
+            <img src="../assets/image/extrac-variab/espresso.png" alt="espresso" class="imagen">
         </section>
         <article class="parrafo">
             <h2>La Molienda</h2>
@@ -133,7 +147,7 @@
         </article>
             <h3 class="subtitulo-suelto">Tasa de extracción</h3>
             <section>
-                <img src="../image/extrac-variab/tasa-extr.jpg" alt="tasa de extracción" class="imagen img-fluid">
+                <img src="../assets/image/extrac-variab/tasa-extr.jpg" alt="tasa de extracción" class="imagen">
             </section>
         <article class="parrafo">
             <p>Los tamaños de molienda grandes (grueso) necesitan más tiempo de contacto con el agua para la extracción de un sabor óptimo. Los tamaños de molienda pequeños (fino) necesitan menos tiempo de contacto para extraer un sabor óptimo. En general, se utiliza una molienda más gruesa durante tiempos más largos de infusión (3-5 minutos) y un molido más fino para los tiempos de infusión más cortos (1-3 minutos).<br>
@@ -147,7 +161,7 @@
             <h3>Algunos ejemplos:</h3>
         </div>
         <section>
-            <img src="../image/extrac-variab/ejemplos-extr.jpg" alt="ejemplos de extracción" class="imagen img-fluid">
+            <img src="../assets/image/extrac-variab/ejemplos-extr.jpg" alt="ejemplos de extracción" class="imagen">
         </section>
         <article class="parrafo">
             <p>Teniendo en cuenta que en la preparación del espresso el agua pasa a un promedio de 9 o más bares de presión, se necesita una molienda fina que haga la suficiente resistencia al agua para lograr una extracción que permita una bebida dulce, balanceada y muy agradable. Pero si la molienda es demasiado fina, apenas se lograrán unos pocos mililitros de una bebida sobreextraída, de sabor amargo astringente y desagradable.<br>
@@ -176,7 +190,7 @@
             </ul>
         </article>
         <section>
-            <img src="../image/extrac-variab/vertido.jpg" alt="vertido de agua" class="imagen img-fluid">
+            <img src="../assets/image/extrac-variab/vertido.jpg" alt="vertido de agua" class="imagen">
         </section>
         <article class="parrafo">
             <p><strong>Temperatura: </strong> la temperatura alta del agua acelera el proceso de extracción. Más caliente, más rápido. Es por eso que los cafés fríos o cold brew necesitan mucho tiempo de contacto del agua con el café para extraerse. Demora mucho más y tiene un sabor mucho más suave que una preparación caliente de los mismos granos. <br>
@@ -207,7 +221,7 @@
             <p>La manera en que se pone en contacto el agua sobre el café puede generar diversas reacciones químicas que también afectarán el sabor final de la bebida. Es por eso que según el método que se utilice, los expertos proponen distintas variables al momento del contacto del agua y el café con el objetivo de lograr cierto perfil de taza.</p>
         </article>
         <section>
-            <img src="../image/extrac-variab/vertido2.png" alt="vertido de agua sobre filtro" class="imagen img-fluid">
+            <img src="../assets/image/extrac-variab/vertido2.png" alt="vertido de agua sobre filtro" class="imagen">
         </section>
         <article class="parrafo">
             <p><strong>Preinfusión: </strong> el momento en que se vierte un poco de agua sobre el café molido para lograr humedecerlo todo. Se pone el doble de peso de agua que de café. Si en la prensa francesa pusimos 20 gramos, deberemos verter 40 gramos de agua y esperar 30 segundos antes de continuar con el llenado del recipiente. La explicación es que al hidratar el café se extraen mejor sus componentes. <br>
@@ -215,13 +229,13 @@
             <strong>La cama del café: </strong> se debe incorporar el café en el filtro de una manera homogénea que tenga la misma altura alrededor del filtro para que pase el líquido de manera equilibrada por todo el café.
         </article>
         <section>
-            <img src="../image/extrac-variab/compactado.jpg" alt="Correcta comparación" class="imagen img-fluid">
+            <img src="../assets/image/extrac-variab/compactado.jpg" alt="Correcta comparación" class="imagen">
         </section>
         <article class="parrafo">
             <strong>La turbulencia: </strong> significa remover el agua vertida en el café para tener una mayor extracción. Es buena en la inmersión, pero no se recomienda en los filtrados.</p>
         </article>
         <section>
-            <img src="../image/extrac-variab/turbulencia.jpg" alt="correcto flujo de agua que da como resultado un cafe espumoso debido a su turbulencia" class="imagen img-fluid">
+            <img src="../assets/image/extrac-variab/turbulencia.jpg" alt="correcto flujo de agua que da como resultado un cafe espumoso debido a su turbulencia" class="imagen">
         </section>
         <article class="parrafo">
             <h2>Granulometría</h2>
@@ -230,7 +244,7 @@
             Es por eso que cuando realizamos bebidas en métodos de inmersión la granulometría debe ser más gruesa (necesitamos 3 minutos promedios de infusión para extraer la bebida). En métodos como el espresso, que requiere sólo 30 segundos de contacto entre el agua y el café, se utiliza una molienda más fina.</p>
         </article>
         <section>
-            <img src="../image/extrac-variab/granulo.jpg" alt="diferentes tamaños granos" class="imagen img-fluid">
+            <img src="../assets/image/extrac-variab/granulo.jpg" alt="diferentes tamaños granos" class="imagen">
         </section>
     </main>
     <footer>
@@ -246,12 +260,14 @@
             <li>info@Cafearte-website.com,ar</a></li>
         </ul>
         <div class="copy-right">
-            <img src="../image/granos-caf.png" alt="icono granos cafe" class="granos-cafe">
+            <img src="../assets/icons/granos-caf.png" alt="icono granos cafe" class="granos-cafe">
             <p>&copy; 2023 Argentine Coffee Website. All rights reserved.</p>
-            <img src="../image/granos-caf.png" alt="icono granos cafe" class="granos-cafe">
+            <img src="../assets/icons/granos-caf.png" alt="icono granos cafe" class="granos-cafe">
         </div>
-        <img src="./image/marco-cafe.png" alt="Borde inferior de granos cafe" id="marco-cafe">
+        <img src="../assets/image/marco-cafe.png" alt="Borde inferior de granos cafe" id="marco-cafe">
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>

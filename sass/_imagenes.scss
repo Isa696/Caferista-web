@@ -1,0 +1,61 @@
+
+.imagen{ /*propiedades grales cont imagen en todas las pags*/
+    height: 80vh;
+    width: 95vw;
+    display: inline-block;
+    border: #fff 15px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px black;
+}
+
+.imagen-grde{ /*propiedades grales cont imagen gran tamaño todas las pags*/
+    height: 115vh;
+    width: 95vw;
+    display: inline-block;
+    border: #fff 15px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px black;
+}
+
+.cont-img-doble{
+    background-color: #fff;
+    height: 80vh;
+    width: 95vw;
+    position: relative;
+    border: #fff 15px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px black;
+}
+@media (max-width: 600px){.cont-img-doble{/*contenedor reajustado de forma vertical*/
+    height: 160vh;
+    width: 95vw;
+}}
+
+.cont-img-doble .img-doble1{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+@media (max-width: 600px){.cont-img-doble .img-doble1{/*estos medias los agregue para reubicar las imagenes*/
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+}}
+
+.cont-img-doble .img-doble2{
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+@media (max-width: 600px){.cont-img-doble .img-doble2{ /*puse top auto para que ignore el atributo que di anteriormente*/
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    height: 50%;
+}}
