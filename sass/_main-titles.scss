@@ -37,6 +37,17 @@
     width: 7vh;
 }
 
+.subtitulo {
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color:  #925858;
+    text-decoration-thickness: 2px;
+}
+
 .subtitulo-suelto{ /*puse unos estilos a los enlaces y aclaraciones que estan por fuerra de parrafos*/
     font-size: 150%;
     color: white;
