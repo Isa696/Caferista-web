@@ -138,11 +138,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #99A253;
     border-radius: 5px;
-}
-.indice a{
-    background-color: #6B2737;
     padding: 1%;
     border-radius: 5px;
 }
@@ -156,8 +152,6 @@ header{
 #grilla-cont-recetas{
     background-color: rgb(252, 224, 191);
     border-radius: 15px;
-    width: auto;
-    height: auto;
     display: grid;
     grid-template-areas:
     "tipos-cafe bebidas-cafe"
