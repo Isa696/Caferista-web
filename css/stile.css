@@ -221,20 +221,8 @@ header {
 .grano-trio { /*icono titulos*/
   height: 7vh;
   width: 7vh;
-  animation: doblado 1s infinite;
 }
 
-@keyframes doblado {
-  0% {
-    transform: skew(40deg, 0deg);
-  }
-  50% {
-    transform: skew(-20deg, 0deg);
-  }
-  100% {
-    transform: skew(40deg, 0deg);
-  }
-}
 .subtitulo {
   text-align: center;
   font-size: 150%;
@@ -395,16 +383,18 @@ footer ul li h4 p {
 .granos-cafe { /*icono footer copyright*/
   height: 7vh;
   width: 7vh;
-  animation: rotacion 1.5s infinite ease-in-out;
+  animation-name: rotacion;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes rotacion {
-  from {
+  0% {
     transform: rotateZ(0deg);
   }
-  to {
+  100% {
     transform: rotateZ(360deg);
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stile.css.map */
