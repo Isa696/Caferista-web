@@ -28,18 +28,21 @@
             align-items: center;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
+            border:rgb(110, 108, 108) 2px solid;
 }
-@media (max-width: 400px){#grilla-cont-recetas{height: 50vh;}}
+@media (max-width: 400px){#grilla-cont-recetas{height: 60vh;}}
 
 #tipos-cafe{grid-area: tipos-cafe;
         text-decoration: underline;}
 
-#lista-cafes{grid-area: lista-cafe;}
+#lista-cafes{grid-area: lista-cafe;
+        line-height: 30px;}
 
 #bebidas-cafe{grid-area: bebidas-cafe;
     text-decoration: underline;}
 
-#lista-bebidas{grid-area: lista-bebidas;}
+#lista-bebidas{grid-area: lista-bebidas;
+        line-height: 30px;}
 
 #agradecimiento { /* contenedor agradecimiento index*/
     display: flex;

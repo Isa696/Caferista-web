@@ -7,7 +7,7 @@
   font-family: sans-serif;
 }
 
-.selector-for-some-widget {
+.selector-for-some-widget { /*clase para evitar errores bootstrap*/
   box-sizing: content-box;
 }
 
@@ -32,7 +32,7 @@ a:focus { /*bordes al enfocar*/
 .boton a:active { /*active para todos los enlaces*/
   text-decoration: underline;
   font-weight: bold;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 /*import del indice*/
@@ -66,11 +66,12 @@ a:focus { /*bordes al enfocar*/
   align-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  border: rgb(110, 108, 108) 2px solid;
 }
 
 @media (max-width: 400px) {
   #grilla-cont-recetas {
-    height: 50vh;
+    height: 60vh;
   }
 }
 #tipos-cafe {
@@ -80,6 +81,7 @@ a:focus { /*bordes al enfocar*/
 
 #lista-cafes {
   grid-area: lista-cafe;
+  line-height: 30px;
 }
 
 #bebidas-cafe {
@@ -89,6 +91,7 @@ a:focus { /*bordes al enfocar*/
 
 #lista-bebidas {
   grid-area: lista-bebidas;
+  line-height: 30px;
 }
 
 #agradecimiento { /* contenedor agradecimiento index*/
@@ -133,6 +136,8 @@ header {
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .barra-nav ul li {
   display: inline-block;
@@ -148,6 +153,11 @@ header {
   padding-bottom: 1%;
 }
 
+@media (max-width: 460px) {
+  #barra-nav2 {
+    justify-content: space-between;
+  }
+}
 #cont-busc {
   display: flex;
   justify-content: center;
@@ -158,26 +168,43 @@ header {
     width: 120px;
   }
 }
+@media (max-width: 460px) {
+  #buscador {
+    width: 80px;
+  }
+}
 #lupa-busc {
-  height: 5vh;
-  width: 5vh;
+  height: 7vh;
+  width: 7vh;
 }
 
+@media (max-width: 460px) {
+  #lupa-busc {
+    width: 5vh;
+    height: 5vh;
+  }
+}
 .grano-brote { /*icono nav bar*/
   height: 7vh;
-  width: 9vh;
+  width: 7vh;
 }
 
+@media (max-width: 460px) {
+  .grano-brote {
+    width: 5vh;
+    height: 5vh;
+  }
+}
 .boton-nav { /*propiedades botones nav*/
   font-size: 170%;
   padding: 0.2%;
-  border: 2px rgb(255, 255, 255) dashed;
+  border: 2px rgb(255, 255, 255) dotted;
   border-radius: 5px;
   margin-bottom: 1%;
   margin-top: 2%;
 }
 .boton-nav a {
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 
@@ -239,7 +266,7 @@ header {
   text-align: center;
   font-size: 150%;
   font-weight: bold;
-  color: #333;
+  color: #726f6f;
   margin-bottom: 10px;
   text-decoration: underline;
   text-decoration-color: #925858;
@@ -269,7 +296,7 @@ header {
   display: inline-block;
   border: #fff 15px solid;
   border-radius: 15px;
-  box-shadow: 3px 3px 3px 3px black;
+  box-shadow: 3px rgb(0, 0, 0);
 }
 
 .imagen-grde { /*propiedades grales cont imagen gran tamaño todas las pags*/
@@ -278,7 +305,7 @@ header {
   display: inline-block;
   border: #fff 15px solid;
   border-radius: 15px;
-  box-shadow: 3px 3px 3px 3px black;
+  box-shadow: 3px rgb(0, 0, 0);
 }
 
 .cont-img-doble {
@@ -288,7 +315,7 @@ header {
   position: relative;
   border: #fff 15px solid;
   border-radius: 15px;
-  box-shadow: 3px 3px 3px 3px black;
+  box-shadow: 3px rgb(0, 0, 0);
 }
 
 @media (max-width: 600px) {
@@ -336,10 +363,11 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
   width: 100%;
   height: 150vh;
   z-index: -9;
+  margin: 0;
+  padding: 0;
 }
 
 footer {

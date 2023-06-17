@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 
-.selector-for-some-widget {
+.selector-for-some-widget { /*clase para evitar errores bootstrap*/
     box-sizing: content-box;
 }
 
@@ -28,5 +28,5 @@ a:focus{ /*bordes al enfocar*/
 .boton a:active{ /*active para todos los enlaces*/
             text-decoration: underline;
             font-weight: bold;
-            color: black
+            color: rgb(0, 0, 0)
         }
