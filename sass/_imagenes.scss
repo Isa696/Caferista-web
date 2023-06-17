@@ -5,7 +5,7 @@
     display: inline-block;
     border: #fff 15px solid;
     border-radius: 15px;
-    box-shadow: 3px rgb(0, 0, 0);
+    box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.75);
 }
 
 .imagen-grde{ /*propiedades grales cont imagen gran tamaño todas las pags*/
@@ -14,7 +14,7 @@
     display: inline-block;
     border: #fff 15px solid;
     border-radius: 15px;
-    box-shadow: 3px rgb(0, 0, 0);
+    box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.75);
 }
 
 .cont-img-doble{
@@ -24,7 +24,7 @@
     position: relative;
     border: #fff 15px solid;
     border-radius: 15px;
-    box-shadow: 3px rgb(0, 0, 0);
+    box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.75);
 }
 @media (max-width: 600px){.cont-img-doble{/*contenedor reajustado de forma vertical*/
     height: 160vh;
