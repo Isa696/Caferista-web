@@ -1,3 +1,6 @@
+/*variables*/
+@import "./var-mixin";
+
 /*propiedades barra de navegacion*/
 
 header{
@@ -5,7 +8,7 @@ header{
     width: 100%;
     top: 0;
     z-index: 9;
-    background-color: #925858;
+    background-color: $marron;
 }
 
 .barra-nav{
@@ -31,33 +34,12 @@ header{
     justify-content: space-evenly;
     padding-bottom: 1%;
 }
-@media (max-width: 460px){#barra-nav2
-        {justify-content: space-between;}}
 
-#cont-busc{
-    display: flex;
-    justify-content: center;
+.iconos-nav{ /*icono nav bar*/
+    height: 9vh;
+    width: 9vh;
 }
-@media (max-width: 600px){#buscador{
-    width: 120px;}}
-@media (max-width: 460px){#buscador{
-        width: 80px;}}
 
-#lupa-busc{
-    height: 7vh;
-    width: 7vh;
-}
-@media (max-width: 460px){#lupa-busc{
-    width: 5vh;
-    height:5vh;}}
-
-.grano-brote{ /*icono nav bar*/
-    height: 7vh;
-    width: 7vh;
-}
-@media (max-width: 460px){.grano-brote{
-    width: 5vh;
-    height:5vh;}}
 
 .boton-nav{ /*propiedades botones nav*/
     font-size: 170%;

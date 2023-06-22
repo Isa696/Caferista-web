@@ -36,6 +36,8 @@ a:focus { /*bordes al enfocar*/
 }
 
 /*import del indice*/
+/*variables*/ /*mixins*/
+/*variables*/
 .indice { /*centrado*/
   text-align: center;
 }
@@ -44,7 +46,7 @@ a:focus { /*bordes al enfocar*/
   padding: 0.5%;
   border-radius: 10px;
   border: rgb(110, 108, 108) 2px solid;
-  background-color: #995959;
+  background-color: #925858;
 }
 .boton-index a {
   color: white;
@@ -120,6 +122,8 @@ a:focus { /*bordes al enfocar*/
 }
 
 /*import barra de navegacion*/
+/*variables*/ /*mixins*/
+/*variables*/
 /*propiedades barra de navegacion*/
 header {
   position: sticky;
@@ -154,48 +158,11 @@ header {
   padding-bottom: 1%;
 }
 
-@media (max-width: 460px) {
-  #barra-nav2 {
-    justify-content: space-between;
-  }
-}
-#cont-busc {
-  display: flex;
-  justify-content: center;
+.iconos-nav { /*icono nav bar*/
+  height: 9vh;
+  width: 9vh;
 }
 
-@media (max-width: 600px) {
-  #buscador {
-    width: 120px;
-  }
-}
-@media (max-width: 460px) {
-  #buscador {
-    width: 80px;
-  }
-}
-#lupa-busc {
-  height: 7vh;
-  width: 7vh;
-}
-
-@media (max-width: 460px) {
-  #lupa-busc {
-    width: 5vh;
-    height: 5vh;
-  }
-}
-.grano-brote { /*icono nav bar*/
-  height: 7vh;
-  width: 7vh;
-}
-
-@media (max-width: 460px) {
-  .grano-brote {
-    width: 5vh;
-    height: 5vh;
-  }
-}
 .boton-nav { /*propiedades botones nav*/
   font-size: 170%;
   padding: 0.2%;
@@ -210,6 +177,8 @@ header {
 }
 
 /*import centrados main, parrafos, titulos y subtitulos*/
+/*variables*/ /*mixins*/
+/*variables*/
 #centrado-main { /*centrado de la pagina en general*/
   margin: 0.5% 2%;
   display: flex;
@@ -244,6 +213,7 @@ header {
   text-decoration: underline;
   color: #fff;
   background-color: #99A253;
+  margin-bottom: 10px;
 }
 
 .grano-trio { /*icono titulos*/
@@ -291,74 +261,66 @@ header {
   }
 }
 /*import imagenes y sus propiedades*/
-.imagen { /*propiedades grales cont imagen en todas las pags*/
+/*mixins*/
+/*variables*/
+/*ScSS*/
+.imagen, .cont-img-doble, .imagen-grde { /*propiedades grales cont imagen en todas las pags*/
   height: 80vh;
   width: 95vw;
-  display: inline-block;
+  box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.75);
   border: #fff 15px solid;
   border-radius: 15px;
-  box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.75);
+  background-color: #fff;
 }
 
-.imagen-grde { /*propiedades grales cont imagen gran tamaño todas las pags*/
+/*propiedades grales cont imagen gran tamaño todas las pags*/
+.imagen-grde {
   height: 115vh;
-  width: 95vw;
-  display: inline-block;
-  border: #fff 15px solid;
-  border-radius: 15px;
-  box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
 .cont-img-doble {
-  background-color: #fff;
-  height: 80vh;
-  width: 95vw;
   position: relative;
-  border: #fff 15px solid;
-  border-radius: 15px;
-  box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
+/*contenedor reajustado de forma vertical*/
 @media (max-width: 600px) {
-  .cont-img-doble { /*contenedor reajustado de forma vertical*/
+  .cont-img-doble {
     height: 160vh;
     width: 95vw;
   }
 }
-.cont-img-doble .img-doble1 {
+.cont-img-doble .img-doble1, .cont-img-doble .img-doble2 {
+  position: absolute;
   top: 0;
   left: 0;
-  position: absolute;
-  width: 50%;
   height: 100%;
+  width: 50%;
 }
 
+/*medias para reubicar las imagenes*/
 @media (max-width: 600px) {
-  .cont-img-doble .img-doble1 { /*estos medias los agregue para reubicar las imagenes*/
-    position: absolute;
-    top: 0;
-    width: 100%;
+  .cont-img-doble .img-doble1, .cont-img-doble .img-doble2 {
     height: 50%;
+    width: 100%;
   }
 }
 .cont-img-doble .img-doble2 {
-  top: 0;
   right: 0;
-  position: absolute;
-  width: 50%;
-  height: 100%;
+  left: auto;
 }
 
+/*puse top auto para que ignore el valor que di anteriormente*/
 @media (max-width: 600px) {
-  .cont-img-doble .img-doble2 { /*puse top auto para que ignore el atributo que di anteriormente*/
-    position: absolute;
+  .cont-img-doble .img-doble2 {
     bottom: 0;
     top: auto;
-    width: 100%;
     height: 50%;
+    width: 100%;
   }
 }
 /*import footer*/
+/*variables*/ /*mixins*/
+/*variables*/
 /*propiedades footer*/
 #marco-cafe { /*fondo detras del footer*/
   position: absolute;

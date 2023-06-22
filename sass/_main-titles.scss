@@ -1,3 +1,5 @@
+/*variables*/
+@import "./var-mixin";
 
 #centrado-main{ /*centrado de la pagina en general*/
     margin: 0.5% 2%;
@@ -30,6 +32,7 @@
     text-decoration: underline;
     color: #fff;
     background-color: #99A253;
+    margin-bottom: 10px;
 }
 
 .grano-trio{ /*icono titulos*/
@@ -51,7 +54,7 @@
     color: #726f6f;
     margin-bottom: 10px;
     text-decoration: underline;
-    text-decoration-color:  #925858;
+    text-decoration-color:  $marron;
     text-decoration-thickness: 2px;
 }
 

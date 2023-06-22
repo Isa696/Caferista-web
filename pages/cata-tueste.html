@@ -27,7 +27,7 @@
 
 <body>
     <header>
-        <nav class="barra-nav collapse" id="navbarToggleExternalContent"><!-- Barra de navegacion-->
+        <nav class="barra-nav collapse" id="navbarToggleExternalContent"><!-- Barra de navegacion oculta-->
             <ul>
                 <li class="boton boton-nav"><a href="./historia.html">Historia</a></li>
                 <li class="boton boton-nav"><a href="./cultivo-reco.html">Cultivo</a></li>
@@ -38,28 +38,39 @@
                 <li class="boton boton-nav"><a href="./recetas.html">Recetas</a></li>
             </ul>
         </nav>
-        <div id="barra-nav2">
+
+        <div id="barra-nav2"> <!-- Barra de navegacion inferior-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <img src="../assets/icons/grano-brote.png" alt="icono grano brote"
-                    class="grano-brote animate__animated animate__bounce animate__slow animate__infinite">
+                    class="iconos-nav animate__animated animate__bounce animate__slow animate__infinite">
+            </button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <img src="../assets/icons/boton-hamb.png" alt="boton menu hamburguesa"
+                class="boton boton-nav iconos-nav">
             </button>
 
             <p class="boton boton-nav"><a href="../index.html">Inicio</a></p>
 
-            <div id="cont-busc">
-                <img src="../assets/icons/lupa.png" alt="lupa" id="lupa-busc">
-                <input type="search" placeholder="Buscar" id="buscador">
-            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <img src="../assets/icons/boton-hamb.png" alt="boton menu hamburguesa"
+                class="boton boton-nav iconos-nav">
+            </button>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <img src="../assets/icons/grano-brote.png" alt="icono grano brote"
-                    class="grano-brote animate__animated animate__bounce animate__slow animate__infinite">
+                    class="iconos-nav animate__animated animate__bounce animate__slow animate__infinite">
             </button>
-
         </div>
+
     </header>
 
     <main id="centrado-main">

@@ -1,3 +1,6 @@
+/*variables*/
+@import "./var-mixin";
+
 /*propiedades footer*/
 
 #marco-cafe{ /*fondo detras del footer*/
@@ -42,7 +45,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #925858;
+    background-color: $marron;
     padding: 1% 0;
     p {
         font-size: 80%;

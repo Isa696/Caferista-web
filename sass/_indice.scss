@@ -1,3 +1,6 @@
+/*variables*/
+@import "./var-mixin";
+
 .indice{ /*centrado*/
     text-align: center;
     }
@@ -6,7 +9,7 @@
         padding: 0.5%;
         border-radius: 10px;
         border:rgb(110, 108, 108) 2px solid;
-        background-color: #995959;
+        background-color: $marron;
             a{
             color: white;
             font-size: 170%;

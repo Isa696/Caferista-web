@@ -1,0 +1,17 @@
+/*mixins*/
+
+@mixin bordes-sombras{
+    box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.75);
+    border: #fff 15px solid;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+@mixin tamano ( $alto , $ancho){
+    height: $alto;
+    width: $ancho;
+}
+
+/*variables*/
+
+$marron:  #925858;

@@ -1,61 +1,49 @@
+@import "./var-mixin";
+
+/*ScSS*/
 
 .imagen{ /*propiedades grales cont imagen en todas las pags*/
-    height: 80vh;
-    width: 95vw;
-    display: inline-block;
-    border: #fff 15px solid;
-    border-radius: 15px;
-    box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.75);
+    @include tamano ( 80vh , 95vw);
+    @include bordes-sombras;
 }
 
-.imagen-grde{ /*propiedades grales cont imagen gran tamaño todas las pags*/
+/*propiedades grales cont imagen gran tamaño todas las pags*/
+.imagen-grde{
+    @extend .imagen;
     height: 115vh;
-    width: 95vw;
-    display: inline-block;
-    border: #fff 15px solid;
-    border-radius: 15px;
-    box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.75);
 }
 
 .cont-img-doble{
-    background-color: #fff;
-    height: 80vh;
-    width: 95vw;
     position: relative;
-    border: #fff 15px solid;
-    border-radius: 15px;
-    box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.75);
+    @extend .imagen;
 }
-@media (max-width: 600px){.cont-img-doble{/*contenedor reajustado de forma vertical*/
-    height: 160vh;
-    width: 95vw;
+
+/*contenedor reajustado de forma vertical*/
+@media (max-width: 600px){.cont-img-doble{
+    @include tamano ( 160vh , 95vw);
 }}
 
 .cont-img-doble .img-doble1{
+    position: absolute;
     top: 0;
     left: 0;
-    position: absolute;
-    width: 50%;
-    height: 100%;
+    @include tamano ( 100% , 50%);
 }
-@media (max-width: 600px){.cont-img-doble .img-doble1{/*estos medias los agregue para reubicar las imagenes*/
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 50%;
+
+/*medias para reubicar las imagenes*/
+@media (max-width: 600px){.cont-img-doble .img-doble1{
+    @include tamano ( 50% , 100%);
 }}
 
 .cont-img-doble .img-doble2{
-    top: 0;
+    @extend .img-doble1;
     right: 0;
-    position: absolute;
-    width: 50%;
-    height: 100%;
+    left: auto;
 }
-@media (max-width: 600px){.cont-img-doble .img-doble2{ /*puse top auto para que ignore el atributo que di anteriormente*/
-    position: absolute;
+
+/*puse top auto para que ignore el valor que di anteriormente*/
+@media (max-width: 600px){.cont-img-doble .img-doble2{
     bottom: 0;
     top: auto;
-    width: 100%;
-    height: 50%;
+    @include tamano ( 50% , 100%);
 }}
