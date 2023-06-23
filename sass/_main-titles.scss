@@ -69,3 +69,19 @@
     background-color: #99A253;
 }
 @media (max-width: 600px){.subtitulo-suelto{font-size: 120%;}}
+
+
+
+#cont-flechas{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    @include tamano (fit-content, 90vw);
+    .anterior{
+        @include tamano (15vh, auto);
+}}
+
+.siguiente{
+        @include tamano (15vh, auto);
+}

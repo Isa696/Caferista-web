@@ -16,7 +16,7 @@ header{
     ul{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -29,16 +29,15 @@ header{
 #barra-nav2 {
     height: fit-content;
     display: flex;
-    flex-flow: row nowrap;
     align-items: center;
     justify-content: space-evenly;
+    flex-flow: row nowrap;
     padding-bottom: 1%;
 }
 
 .iconos-nav{ /*icono nav bar*/
-    height: 9vh;
-    width: 9vh;
-}
+    @include tamano (9vh, 9vw);
+    }
 
 
 .boton-nav{ /*propiedades botones nav*/
