@@ -27,12 +27,17 @@ a:focus { /*bordes al enfocar*/
   .boton:hover { /*puse un media hover para evitar errores en dispositivos*/
     transform: scale(150%);
     transition: 0.5s;
+    box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.75);
   }
 }
 .boton a:active { /*active para todos los enlaces*/
   text-decoration: underline;
   font-weight: bold;
   color: rgb(0, 0, 0);
+}
+
+* p {
+  margin: 0;
 }
 
 /*import del indice*/
@@ -59,7 +64,7 @@ a:focus { /*bordes al enfocar*/
 }
 
 #grilla-cont-recetas {
-  margin-top: 1%;
+  margin: 1% 0;
   background-color: rgb(252, 224, 191);
   border-radius: 15px;
   display: grid;
@@ -142,7 +147,8 @@ header {
   justify-content: space-around;
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding: 2% 0;
+  gap: 10px;
 }
 .barra-nav ul li {
   display: inline-block;
@@ -155,12 +161,13 @@ header {
   align-items: center;
   justify-content: space-evenly;
   flex-flow: row nowrap;
-  padding-bottom: 1%;
+  padding: 2%;
+  margin: 0;
 }
 
 .iconos-nav { /*icono nav bar*/
   height: 9vh;
-  width: 9vw;
+  width: 5vw;
 }
 
 .boton-nav { /*propiedades botones nav*/
@@ -168,8 +175,7 @@ header {
   padding: 0.2%;
   border: 2px rgb(255, 255, 255) dotted;
   border-radius: 5px;
-  margin-bottom: 1%;
-  margin-top: 2%;
+  background-color: #925858;
 }
 .boton-nav a {
   color: rgb(255, 255, 255);
@@ -180,7 +186,6 @@ header {
 /*variables*/ /*mixins*/
 /*variables*/
 #centrado-main { /*centrado de la pagina en general*/
-  margin: 0.5% 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,8 +193,7 @@ header {
 }
 
 .parrafo { /*propiedades generales para todos los parrafos*/
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin: 2%;
   font-size: 130%;
   padding: 1% 5%;
   color: black;
@@ -253,6 +257,7 @@ header {
   margin-top: 1%;
   margin-bottom: 1%;
   background-color: #99A253;
+  border-radius: 15px;
 }
 
 @media (max-width: 600px) {
@@ -268,14 +273,10 @@ header {
   height: fit-content;
   width: 90vw;
 }
-#cont-flechas .anterior {
+#cont-flechas .flecha {
   height: 15vh;
   width: auto;
-}
-
-.siguiente {
-  height: 15vh;
-  width: auto;
+  border-radius: 50%;
 }
 
 /*import imagenes y sus propiedades*/
