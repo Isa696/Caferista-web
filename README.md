@@ -1,5 +1,4 @@
-Caférista: Página Web de Café
-Descripción del Proyecto
+Caférista: Página Web de Café.
 Caférista es una sitio web diseñada para los amantes del café.
 Como parte de mi formación en desarrollo web durante un curso en Coder House,
 creé esta plataforma para compartir mi pasión por el café con otros entusiastas.
