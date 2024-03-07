@@ -1,4 +1,4 @@
-Café Rista: Página Web de Café
+Caférista: Página Web de Café
 Descripción del Proyecto
 Caférista es una sitio web diseñada para los amantes del café.
 Como parte de mi formación en desarrollo web durante un curso en Coder House,
@@ -23,3 +23,8 @@ como “Historia”, “Recetas” y “Cultivo” etc.
 Tecnologías Utilizadas
 HTML: Estructuré el contenido de la página utilizando HTML.
 CSS (incluyendo SASS): Apliqué estilos visuales utilizando CSS y aproveché SASS para una gestión más eficiente de mis estilos.
+Bootstrap: Implementé un menú acordeón con el mismo sin utilizar JS.
+
+Cómo probarlo:
+Puedes ver e interactuar con la versión final del proyecto en vivo aquí.
+https://caferista.vercel.app/
