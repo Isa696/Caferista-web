@@ -22,10 +22,10 @@ lo que permite a los usuarios navegar fácilmente por las diferentes secciones d
 como “Historia”, “Recetas” y “Cultivo” etc.
 
 Tecnologías Utilizadas<br>
-HTML: Estructuré el contenido de la página utilizando HTML.
-CSS (incluyendo SASS): Apliqué estilos visuales utilizando CSS y aproveché SASS para una gestión más eficiente de mis estilos.
-Bootstrap: Implementé un menú acordeón con el mismo sin utilizar JS.
+HTML: Estructuré el contenido de la página utilizando HTML.<br>
+CSS (incluyendo SASS): Apliqué estilos visuales utilizando CSS y aproveché SASS para una gestión más eficiente de mis estilos.<br>
+Bootstrap: Implementé un menú acordeón con el mismo sin utilizar JS.<br>
 
-Cómo probarlo:
-Puedes ver e interactuar con la versión final del proyecto en vivo aquí.
-https://caferista.vercel.app/
+Cómo probarlo:<br>
+Puedes ver e interactuar con la versión final del proyecto en vivo aquí.<br>
+🔗 https://caferista.vercel.app/
