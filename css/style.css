@@ -193,6 +193,7 @@ header {
 }
 
 .parrafo { /*propiedades generales para todos los parrafos*/
+  width: clamp(300px, 80%, 1000px);
   margin: 2%;
   font-size: 130%;
   padding: 1% 5%;
